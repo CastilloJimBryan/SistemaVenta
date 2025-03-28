@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Servicio
 {
-    public class Class1
+    public class ManejoSesion
     {
     }
 }
