@@ -15,9 +15,9 @@ namespace BE
 			get { return nombre; }
 			set { nombre = value; }
 		}
-		private int apellido;
+		private string apellido;
 
-		public int Apellido
+		public string Apellido
 		{
 			get { return apellido; }
 			set { apellido = value; }
@@ -30,16 +30,16 @@ namespace BE
 			set { dni = value; }
 		}
 
-		private int clave;
+		private string clave;
 
-		public int Clave
+		public string Clave
 		{
 			get { return clave; }
 			set { clave = value; }
 		}
-		private int correo;
+		private string correo;
 
-		public int Correo
+		public string Correo
 		{
 			get { return correo; }
 			set { correo = value; }

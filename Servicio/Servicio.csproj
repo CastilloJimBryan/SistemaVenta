@@ -44,5 +44,11 @@
     <Compile Include="ManejoSesion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.csproj">
+      <Project>{442b66da-dd9e-44db-816a-b9703b3b6036}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

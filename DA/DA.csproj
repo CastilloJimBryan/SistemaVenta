@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,6 +44,16 @@
   <ItemGroup>
     <Compile Include="UsuarioDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.csproj">
+      <Project>{442b66da-dd9e-44db-816a-b9703b3b6036}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicio\Servicio.csproj">
+      <Project>{2326ec05-0718-4408-b6ea-e4222e4d8b52}</Project>
+      <Name>Servicio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
