@@ -1,0 +1,13 @@
+C:\Users\Navegador\Desktop\SistemaVenta\BL\bin\Debug\BL.dll
+C:\Users\Navegador\Desktop\SistemaVenta\BL\bin\Debug\BL.pdb
+C:\Users\Navegador\Desktop\SistemaVenta\BL\bin\Debug\BE.dll
+C:\Users\Navegador\Desktop\SistemaVenta\BL\bin\Debug\DA.dll
+C:\Users\Navegador\Desktop\SistemaVenta\BL\bin\Debug\Servicio.dll
+C:\Users\Navegador\Desktop\SistemaVenta\BL\bin\Debug\BE.pdb
+C:\Users\Navegador\Desktop\SistemaVenta\BL\bin\Debug\DA.pdb
+C:\Users\Navegador\Desktop\SistemaVenta\BL\bin\Debug\Servicio.pdb
+C:\Users\Navegador\Desktop\SistemaVenta\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+C:\Users\Navegador\Desktop\SistemaVenta\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\Desktop\SistemaVenta\BL\obj\Debug\BL.csproj.Up2Date
+C:\Users\Navegador\Desktop\SistemaVenta\BL\obj\Debug\BL.dll
+C:\Users\Navegador\Desktop\SistemaVenta\BL\obj\Debug\BL.pdb

@@ -1,0 +1,9 @@
+C:\Users\Navegador\Desktop\SistemaVenta\Servicio\bin\Debug\Servicio.dll
+C:\Users\Navegador\Desktop\SistemaVenta\Servicio\bin\Debug\Servicio.pdb
+C:\Users\Navegador\Desktop\SistemaVenta\Servicio\bin\Debug\BE.dll
+C:\Users\Navegador\Desktop\SistemaVenta\Servicio\bin\Debug\BE.pdb
+C:\Users\Navegador\Desktop\SistemaVenta\Servicio\obj\Debug\Servicio.csproj.AssemblyReference.cache
+C:\Users\Navegador\Desktop\SistemaVenta\Servicio\obj\Debug\Servicio.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\Desktop\SistemaVenta\Servicio\obj\Debug\Servicio.csproj.Up2Date
+C:\Users\Navegador\Desktop\SistemaVenta\Servicio\obj\Debug\Servicio.dll
+C:\Users\Navegador\Desktop\SistemaVenta\Servicio\obj\Debug\Servicio.pdb

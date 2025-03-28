@@ -79,5 +79,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="BE\BE.csproj">
+      <Project>{442b66da-dd9e-44db-816a-b9703b3b6036}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="BL\BL.csproj">
+      <Project>{7accfdac-0d65-4858-acae-5427a51dcdf5}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="Servicio\Servicio.csproj">
+      <Project>{2326ec05-0718-4408-b6ea-e4222e4d8b52}</Project>
+      <Name>Servicio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

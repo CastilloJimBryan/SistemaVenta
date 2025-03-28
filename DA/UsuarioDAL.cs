@@ -13,6 +13,7 @@ namespace DA
     public class UsuarioDAL
     {
         SqlConnection connection => new SqlConnection(ConfigurationManager.ConnectionStrings["BDA"].ConnectionString);
+        
         public Usuario ObtenerUserPass(string nom, string psw)
         {
             using (SqlConnection con=connection)
