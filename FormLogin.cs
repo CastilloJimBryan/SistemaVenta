@@ -29,7 +29,7 @@ namespace Sistema_Venta
             try
             {
                 loginBL = new LoginBL();
-                loginBL.ObtenerUserPass(textBox1.Text, textBox2.Text);
+                loginBL.Login(textBox1.Text, textBox2.Text);
                 MessageBox.Show("Ingreso Correctamente!!");
                 FormMenu formMenu=new FormMenu();
                 formMenu.StartPosition = FormStartPosition.CenterScreen;

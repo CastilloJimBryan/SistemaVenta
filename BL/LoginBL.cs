@@ -16,7 +16,7 @@ namespace BL
         {
             usuarioDAL = new UsuarioDAL();
         }
-        public void ObtenerUserPass(string nom,string psw)
+        public void Login(string nom,string psw)
         {
             if(String.IsNullOrEmpty(nom) && String.IsNullOrEmpty(psw))
             {
@@ -25,6 +25,10 @@ namespace BL
             Usuario u = usuarioDAL.ObtenerUserPass(nom, psw);
             if(u == null) { throw new Exception("Usuario / Contraseña Incorrecto!");  }
             ManejoSesion.LogIn(u);
+        }
+        public void Logout()
+        {
+            ManejoSesion.LogOut();
         }
     }
 }

@@ -11,9 +11,12 @@ namespace Servicio
     {
         public Usuario usuario;
         private static ManejoSesion _getSesion;
-        public  ManejoSesion GetSesion()
+        public static ManejoSesion GetSesion
         {
-            return _getSesion;
+            get
+            {
+                return _getSesion;
+            }
         }
         public static void LogIn(Usuario usuario)
         {
