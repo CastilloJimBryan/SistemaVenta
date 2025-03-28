@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ACCFDAC-0D65-4858-ACAE-5427A51DCDF5}|BL\\BL.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\bl\\loginbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ACCFDAC-0D65-4858-ACAE-5427A51DCDF5}|BL\\BL.csproj|solutionrelative:bl\\loginbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA33BD60-B99D-4745-816A-020B89ADAEAA}|DA\\DA.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\da\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA33BD60-B99D-4745-816A-020B89ADAEAA}|DA\\DA.csproj|C:\\Users\\Navegador\\Desktop\\SistemaVenta\\da\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA33BD60-B99D-4745-816A-020B89ADAEAA}|DA\\DA.csproj|solutionrelative:da\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ACCFDAC-0D65-4858-ACAE-5427A51DCDF5}|BL\\BL.csproj|C:\\Users\\Navegador\\Desktop\\SistemaVenta\\bl\\loginbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ACCFDAC-0D65-4858-ACAE-5427A51DCDF5}|BL\\BL.csproj|solutionrelative:bl\\loginbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,49 +30,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormMenu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormMenu.cs",
+              "RelativeDocumentMoniker": "FormMenu.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormMenu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormMenu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T16:16:26.796Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAawCEAAAAhAAAAAAAAAA==",
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormLogin.cs",
+              "RelativeDocumentMoniker": "FormLogin.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormLogin.cs",
+              "RelativeToolTip": "FormLogin.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAawCQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T15:15:43.634Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "DocumentIndex": 3,
+              "Title": "FormLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormLogin.cs",
+              "RelativeDocumentMoniker": "FormLogin.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T15:15:35.91Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UsuarioDAL.cs",
               "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\DA\\UsuarioDAL.cs",
               "RelativeDocumentMoniker": "DA\\UsuarioDAL.cs",
               "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\DA\\UsuarioDAL.cs",
               "RelativeToolTip": "DA\\UsuarioDAL.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAxwA8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T13:36:27.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LoginBL.cs",
               "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\BL\\LoginBL.cs",
               "RelativeDocumentMoniker": "BL\\LoginBL.cs",
@@ -76,8 +92,7 @@
               "RelativeToolTip": "BL\\LoginBL.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T13:47:02.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T13:47:02.961Z"
             }
           ]
         }

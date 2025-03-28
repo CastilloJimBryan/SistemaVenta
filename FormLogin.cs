@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace Sistema_Venta
 {
-    public partial class Form1: Form
+    public partial class FormLogin: Form
     {
         LoginBL loginBL;
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -30,8 +30,10 @@ namespace Sistema_Venta
             {
                 loginBL = new LoginBL();
                 loginBL.ObtenerUserPass(textBox1.Text, textBox2.Text);
-                MessageBox.Show("Ingreso Correctamente");
-                //formulario menu
+                MessageBox.Show("Ingreso Correctamente!!");
+                FormMenu formMenu=new FormMenu();
+                formMenu.StartPosition = FormStartPosition.CenterScreen;
+                formMenu.ShowDialog();
                 this.Hide();
             }
             catch (Exception ex)

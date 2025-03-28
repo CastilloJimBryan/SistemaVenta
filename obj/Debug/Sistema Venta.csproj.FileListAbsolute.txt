@@ -10,10 +10,11 @@ C:\Users\Navegador\Desktop\SistemaVenta\bin\Debug\BL.pdb
 C:\Users\Navegador\Desktop\SistemaVenta\bin\Debug\Servicio.pdb
 C:\Users\Navegador\Desktop\SistemaVenta\bin\Debug\DA.pdb
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema Venta.csproj.AssemblyReference.cache
-C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.Form1.resources
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.Properties.Resources.resources
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema Venta.csproj.GenerateResource.cache
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema Venta.csproj.CoreCompileInputs.cache
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema .6461BCE9.Up2Date
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema Venta.exe
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema Venta.pdb
+C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormLogin.resources
+C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormMenu.resources
