@@ -48,17 +48,19 @@ namespace Sistema_Venta
             Application.Restart();
         }
 
-        private void FormMenu_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //loginBL.Logout();
-            Application.Restart();
-        }
-
         private void FormMenu_FormClosing(object sender, FormClosingEventArgs e)
         {
 
             //loginBL.Logout();
-            Application.Restart();
+            //Application.Restart();
+        }
+
+        private void listadoEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListadoEmpleados formListadoEmpleados = new FormListadoEmpleados();
+            formListadoEmpleados.StartPosition= FormStartPosition.CenterScreen;
+            formListadoEmpleados.MdiParent = this;
+            formListadoEmpleados.Show();
         }
     }
 }
