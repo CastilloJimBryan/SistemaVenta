@@ -19,3 +19,4 @@ C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema Venta.pdb
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormLogin.resources
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormMenu.resources
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormListadoEmpleados.resources
+C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormABMUsuario.resources

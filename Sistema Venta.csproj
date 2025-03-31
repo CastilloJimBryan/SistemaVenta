@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constantes.cs" />
+    <Compile Include="FormABMUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormABMUsuario.Designer.cs">
+      <DependentUpon>FormABMUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormListadoEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormABMUsuario.resx">
+      <DependentUpon>FormABMUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormListadoEmpleados.resx">
       <DependentUpon>FormListadoEmpleados.cs</DependentUpon>
     </EmbeddedResource>

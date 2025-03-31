@@ -20,6 +20,8 @@ namespace Sistema_Venta
         {
             loginBL = new LoginBL();
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+           
         }
 
         private void FormMenu_Load(object sender, EventArgs e)
@@ -45,7 +47,7 @@ namespace Sistema_Venta
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             loginBL.Logout();
-            Application.Restart();
+            //Application.Restart();
         }
 
         private void FormMenu_FormClosing(object sender, FormClosingEventArgs e)
