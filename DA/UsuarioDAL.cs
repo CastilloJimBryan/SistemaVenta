@@ -46,5 +46,37 @@ namespace DA
                 }
             }
         }
+        public List<Usuario> ListadoEmpleados()
+        {
+            using (SqlConnection con=connection)
+            {
+                con.Open();
+                using (SqlCommand cmd=new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType=CommandType.Text;
+                    cmd.CommandText = "SELECT * FROM Usuario";
+                    List<Usuario> list=new List<Usuario>();
+                    using (SqlDataReader dr=cmd.ExecuteReader())
+                    {
+                        while(dr.Read())
+                        {
+                            list.Add(new Usuario
+                            {
+                                Id = int.Parse(dr["id"].ToString()),
+                                Nombre = dr["Nombre"].ToString(),
+                                Apellido = dr["Apellido"].ToString(),
+                                DNI = int.Parse(dr["DNI"].ToString() ),
+                                Telefono = int.Parse(dr["Telefono"].ToString()),
+                                Correo = dr["Correo"].ToString (),
+                                Clave = dr["Clave"].ToString (),
+                                Estado = bool.Parse(dr["Estado"].ToString())
+                            });
+                        }
+                        return list;
+                    }
+                }
+            }
+        }
     }
 }
