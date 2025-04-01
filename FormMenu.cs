@@ -47,14 +47,7 @@ namespace Sistema_Venta
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             loginBL.Logout();
-            //Application.Restart();
-        }
-
-        private void FormMenu_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-            //loginBL.Logout();
-            //Application.Restart();
+            Application.Restart();
         }
 
         private void listadoEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -63,6 +56,11 @@ namespace Sistema_Venta
             formListadoEmpleados.StartPosition= FormStartPosition.CenterScreen;
             formListadoEmpleados.MdiParent = this;
             formListadoEmpleados.Show();
+        }
+
+        private void FormMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

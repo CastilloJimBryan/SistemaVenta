@@ -32,11 +32,10 @@ namespace Sistema_Venta
                 loginBL.Login(textBox1.Text, textBox2.Text);
                 MessageBox.Show("Ingreso Correctamente!!");
                 FormMenu formMenu=new FormMenu();
-                //formMenu.Size= new Size(1320, 670);
                 formMenu.WindowState = FormWindowState.Maximized;
                 formMenu.StartPosition = FormStartPosition.CenterScreen;
-                formMenu.ShowDialog();
                 this.Hide();
+                formMenu.ShowDialog();
             }
             catch (Exception ex)
             {

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,9 +17,20 @@ namespace BL
         {
             usuarioDAL = new UsuarioDAL();
         }
+        #region DatosUsuario
+
         public List<Usuario> ListarEmpleados()
         {
             return usuarioDAL.ListadoEmpleados();
         }
+        public int AgregarUsuario(Usuario u)
+        {
+            return usuarioDAL.AgregarUsuario(u);
+        }
+        public Usuario VerUsuarioId(int mid)
+        {
+            return usuarioDAL.VerUsuarioId(mid);
+        }
+        #endregion
     }
 }

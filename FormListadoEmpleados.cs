@@ -14,8 +14,10 @@ namespace Sistema_Venta
 {
     public partial class FormListadoEmpleados: Form
     {
+        UsuarioBL usuarioBL;
         public FormListadoEmpleados()
         {
+            usuarioBL = new UsuarioBL();
             InitializeComponent();
         }
 
@@ -33,10 +35,11 @@ namespace Sistema_Venta
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false;
             dataGridView1.ReadOnly = true;
+            dataGridView1.AutoSizeColumnsMode= DataGridViewAutoSizeColumnsMode.Fill;
 
             Actualizar();
         }
-        void Actualizar()
+        private void Actualizar()
         {
             dataGridView1.Rows.Clear();
             foreach (Usuario u in (new UsuarioBL().ListarEmpleados()))
@@ -45,8 +48,9 @@ namespace Sistema_Venta
             }
             if (dataGridView1.Rows.Count > 0)
             {
-                dataGridView1.SelectedRows[0].Selected = false;
-                dataGridView1.SelectedRows[0].Visible = false;
+                dataGridView1.Rows[0].Visible = false;
+                dataGridView1.Rows[0].Selected=false;
+
             }
         }
 
@@ -55,9 +59,25 @@ namespace Sistema_Venta
             FormABMUsuario formABMUsuario = new FormABMUsuario();
             formABMUsuario.StartPosition=FormStartPosition.CenterScreen;
             formABMUsuario.TipoOperacion= Constantes.Operacion.Agregar;
-            formABMUsuario.MdiParent=this.MdiParent;
-            formABMUsuario.Show();
+            formABMUsuario.ShowDialog();
             Actualizar();
+        }
+
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int mid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                FormABMUsuario formABMUsuario = new FormABMUsuario();
+                formABMUsuario.StartPosition = FormStartPosition.CenterScreen;
+                formABMUsuario.TipoOperacion = Constantes.Operacion.Ver;
+                formABMUsuario.UsuarioEditar = usuarioBL.VerUsuarioId(mid);
+                formABMUsuario.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Debe Elegir Empleado a ver");
+            }
         }
     }
 }
