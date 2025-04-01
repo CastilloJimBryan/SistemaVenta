@@ -79,7 +79,37 @@ namespace DA
                 }
             }
         }
-
+        public Usuario VerUsuarioId(int mid)
+        {
+            using (SqlConnection con=connection)
+            {
+                con.Open();
+                using (SqlCommand cmd=new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType=CommandType.Text;
+                    cmd.CommandText = "SELECT * FROM Usuario WHERE Id=@Id";
+                    cmd.Parameters.AddWithValue("id", mid);
+                    using (SqlDataReader dr=cmd.ExecuteReader())
+                    {
+                        if(dr.Read())
+                        {
+                            return new Usuario
+                            {
+                                Id = int.Parse(dr["id"].ToString()),
+                                Nombre = dr["Nombre"].ToString(),
+                                Apellido = dr["Apellido"].ToString(),
+                                Correo = dr["Correo"].ToString(),
+                                DNI = int.Parse(dr["DNI"].ToString()),
+                                Telefono = int.Parse(dr["Telefono"].ToString()),
+                                Estado = bool.Parse(dr["Estado"].ToString())
+                            };
+                        }
+                        return null;
+                    }
+                }
+            }
+        }
         public int AgregarUsuario(Usuario u)
         {
             using (SqlConnection con=connection)
