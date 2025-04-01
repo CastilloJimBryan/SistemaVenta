@@ -13,7 +13,8 @@ namespace DA
     public class UsuarioDAL
     {
         SqlConnection connection => new SqlConnection(ConfigurationManager.ConnectionStrings["BDA"].ConnectionString);
-        
+        #region FuncionesEmpleados
+
         public Usuario ObtenerUserPass(string nom, string psw)
         {
             using (SqlConnection con=connection)
@@ -78,5 +79,29 @@ namespace DA
                 }
             }
         }
+
+        public int AgregarUsuario(Usuario u)
+        {
+            using (SqlConnection con=connection)
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "INSERT INTO Usuario (Nombre,Apellido,DNI,Clave,Correo,Telefono,Estado) VALUES (@Nombre,@Apellido,@DNI,@Clave,@Correo,@Telefono,@Estado);";
+                    cmd.Parameters.AddWithValue("@Nombre",u.Nombre);
+                    cmd.Parameters.AddWithValue("@Apellido",u.Apellido);
+                    cmd.Parameters.AddWithValue("@DNI",u.DNI);
+                    cmd.Parameters.AddWithValue("@Clave",u.Clave);
+                    cmd.Parameters.AddWithValue("@Correo",u.Correo);
+                    cmd.Parameters.AddWithValue("@Telefono",u.Telefono);
+                    cmd.Parameters.AddWithValue("@Estado",u.Estado);
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        #endregion
     }
 }
