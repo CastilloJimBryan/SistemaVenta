@@ -19,5 +19,9 @@ namespace BL
         {
             return bitacoraDAL.ListadoBitacora();
         }
+        public int AgregarBitacora(Usuario u,string a)
+        {
+            return bitacoraDAL.AgregarBitacora(u,a);
+        }
     }
 }

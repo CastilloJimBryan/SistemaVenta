@@ -44,5 +44,24 @@ namespace DA
                 }
             }
         }
+
+        public int AgregarBitacora(Usuario u,string actividad)
+        {
+            using (SqlConnection con = connection)
+            {
+                con.Open();
+                using (SqlCommand cmd=new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "INSERT INTO Bitacora (UsuarioId,Actividad,Fecha) " +
+                        " VALUES (@UsuarioId,@Actividad,@Fecha)";
+                    cmd.Parameters.AddWithValue("@UsuarioId",u.Id);
+                    cmd.Parameters.AddWithValue("@Actividad",actividad);
+                    cmd.Parameters.AddWithValue("@Fecha",DateTime.Now);
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }
