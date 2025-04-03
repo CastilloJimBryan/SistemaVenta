@@ -153,6 +153,21 @@ namespace DA
                 }
             }
         }
+        public int EliminarUsuario(Usuario u)
+        {
+            using (SqlConnection con = connection)
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "DELETE FROM Usuario WHERE Id=@Id";
+                    cmd.Parameters.AddWithValue("@Id", u.Id);
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
         #endregion
     }
 }
