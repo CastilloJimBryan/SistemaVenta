@@ -23,8 +23,8 @@ namespace DA
                 using (SqlCommand cmd=new SqlCommand())
                 {
                     cmd.Connection = con;
-                    cmd.CommandType=CommandType.Text;
-                    cmd.CommandText = "SELECT * FROM Usuario WHERE Nombre=@Nombre AND Clave=@Clave";
+                    cmd.CommandType=CommandType.StoredProcedure;
+                    cmd.CommandText = "ObtenerUserPass";
                     cmd.Parameters.AddWithValue("@Nombre",nom);
                     cmd.Parameters.AddWithValue("@Clave",psw);
                     using (SqlDataReader dr = cmd.ExecuteReader())
@@ -55,8 +55,8 @@ namespace DA
                 using (SqlCommand cmd=new SqlCommand())
                 {
                     cmd.Connection = con;
-                    cmd.CommandType=CommandType.Text;
-                    cmd.CommandText = "SELECT * FROM Usuario";
+                    cmd.CommandType=CommandType.StoredProcedure;
+                    cmd.CommandText = "ListadoEmpleado";
                     List<Usuario> list=new List<Usuario>();
                     using (SqlDataReader dr=cmd.ExecuteReader())
                     {
@@ -87,8 +87,8 @@ namespace DA
                 using (SqlCommand cmd=new SqlCommand())
                 {
                     cmd.Connection = con;
-                    cmd.CommandType=CommandType.Text;
-                    cmd.CommandText = "SELECT * FROM Usuario WHERE Id=@Id";
+                    cmd.CommandType=CommandType.StoredProcedure;
+                    cmd.CommandText = "BuscarUsuarioXId";
                     cmd.Parameters.AddWithValue("id", mid);
                     using (SqlDataReader dr=cmd.ExecuteReader())
                     {
@@ -118,8 +118,8 @@ namespace DA
                 using (SqlCommand cmd = new SqlCommand())
                 {
                     cmd.Connection = con;
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "INSERT INTO Usuario (Nombre,Apellido,DNI,Clave,Correo,Telefono,Estado) VALUES (@Nombre,@Apellido,@DNI,@Clave,@Correo,@Telefono,@Estado);";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "AgregarUsuario";
                     cmd.Parameters.AddWithValue("@Nombre",u.Nombre);
                     cmd.Parameters.AddWithValue("@Apellido",u.Apellido);
                     cmd.Parameters.AddWithValue("@DNI",u.DNI);
@@ -139,9 +139,8 @@ namespace DA
                 using (SqlCommand cmd=new SqlCommand())
                 {
                     cmd.Connection = con;
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "UPDATE Usuario SET Nombre=@Nombre,Apellido=@Apellido,DNI=@DNI,Clave=@Clave,Correo=@Correo,Telefono=@Telefono " +
-                        " WHERE Id=@Id";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "EditarUsuario";
                     cmd.Parameters.AddWithValue("@Id",u.Id);
                     cmd.Parameters.AddWithValue("@Nombre",u.Nombre);
                     cmd.Parameters.AddWithValue("@Apellido",u.Apellido);
@@ -161,8 +160,8 @@ namespace DA
                 using (SqlCommand cmd = new SqlCommand())
                 {
                     cmd.Connection = con;
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "DELETE FROM Usuario WHERE Id=@Id";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "EliminarUsuario";
                     cmd.Parameters.AddWithValue("@Id", u.Id);
                     return cmd.ExecuteNonQuery();
                 }
