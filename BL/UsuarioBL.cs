@@ -31,6 +31,10 @@ namespace BL
         {
             return usuarioDAL.VerUsuarioId(mid);
         }
+        public int EditarUsuario(Usuario u)
+        {
+            return usuarioDAL.EditarUsuario(u);
+        }
         #endregion
     }
 }
