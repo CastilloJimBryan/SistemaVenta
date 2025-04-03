@@ -29,6 +29,9 @@ namespace Sistema_Venta
             textBox7.UseSystemPasswordChar = true;
             textBox6.ReadOnly = true;
             textBox7.ReadOnly = true;
+            cbxActivo.Visible = false;
+            btnCancelar.Text = "Cerrar";
+
         }
         void Inicializar()
         {
@@ -36,15 +39,22 @@ namespace Sistema_Venta
             {
                 case Constantes.Operacion.Agregar:
                     BtnAceptar.Text = "Agregar";
-                    cbxActivo.Visible = false;
+                    BtnAceptar.BackColor=Color.LightBlue;
+                    groupBox1.Text = "Registrar Usuario";
                     break;
                 case Constantes.Operacion.Modificar:
-                   ////
+                    if(UsuarioEditar==null)
+                    {
+                        MessageBox.Show("No hay Empleado");
+                    }
+                    BtnAceptar.Text = "Editar";
+                    groupBox1.Text = "Editar Usuario";
+                    CargarDatos(UsuarioEditar);
                     break;
                 case Constantes.Operacion.Ver:
                     cbxActivo.Visible = true;
                     BtnAceptar.Visible = false;
-                    btnCancelar.Text = "Cerrar";
+                    groupBox1.Text = "Datos del Usuario";
                     if (UsuarioEditar == null)
                     {
                         MessageBox.Show("No hay Empleado");
@@ -53,7 +63,15 @@ namespace Sistema_Venta
                     CargarDatos(UsuarioEditar);
                     break;
                 case Constantes.Operacion.Eliminar:
-                    ////
+                    if(UsuarioEditar == null)
+                    {
+                        MessageBox.Show("No hay Empleado");
+                    }
+                    BtnAceptar.Text = "Eliminar?";
+                    BtnAceptar.BackColor=Color.Red;
+                    groupBox1.Text = "Eliminar Usuario";
+                    SoloLectura();
+                    CargarDatos(UsuarioEditar);
                     break;
                 default:
                     break;
@@ -101,10 +119,17 @@ namespace Sistema_Venta
                     this.Close();
                     break;
                 case Constantes.Operacion.Modificar:
-                    break;
-                case Constantes.Operacion.Ver:
+                    if (UsuarioEditar != null)
+                        CompletarCampos(UsuarioEditar);
+                    usuarioBL.EditarUsuario(UsuarioEditar);
+                    MessageBox.Show("Se Modifico Correctamente!");
+                    this.Close();
                     break;
                 case Constantes.Operacion.Eliminar:
+                    if (UsuarioEditar != null)
+                        usuarioBL.EliminarUsuario (UsuarioEditar);
+                    MessageBox.Show("Se Elimino Correctamente");
+                    this.Close();
                     break;
                 default:
                     break;

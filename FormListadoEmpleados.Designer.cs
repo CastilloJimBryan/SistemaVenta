@@ -90,21 +90,23 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(6, 121);
+            this.btnEliminar.Location = new System.Drawing.Point(6, 124);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(100, 42);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(6, 73);
+            this.btnEditar.Location = new System.Drawing.Point(6, 68);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(100, 42);
             this.btnEditar.TabIndex = 1;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnVer
             // 
@@ -118,7 +120,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(221, 247);
+            this.textBox1.Location = new System.Drawing.Point(356, 250);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(271, 22);
             this.textBox1.TabIndex = 3;
@@ -126,11 +128,11 @@
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(160, 250);
+            this.lblBuscar.Location = new System.Drawing.Point(236, 253);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(55, 16);
+            this.lblBuscar.Size = new System.Drawing.Size(114, 16);
             this.lblBuscar.TabIndex = 4;
-            this.lblBuscar.Text = "Buscar";
+            this.lblBuscar.Text = "Buscar Nombre";
             // 
             // FormListadoEmpleados
             // 

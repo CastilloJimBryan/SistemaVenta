@@ -79,5 +79,41 @@ namespace Sistema_Venta
                 MessageBox.Show("Debe Elegir Empleado a ver");
             }
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int mid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                FormABMUsuario formABMUsuario = new FormABMUsuario();
+                formABMUsuario.StartPosition = FormStartPosition.CenterScreen;
+                formABMUsuario.TipoOperacion = Constantes.Operacion.Modificar;
+                formABMUsuario.UsuarioEditar= usuarioBL.VerUsuarioId(mid) ;
+                formABMUsuario.ShowDialog();
+                Actualizar();
+            }
+            else
+            {
+                MessageBox.Show("Elegir Usuario a Editar");
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int mid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                FormABMUsuario formABMUsuario = new FormABMUsuario();
+                formABMUsuario.StartPosition = FormStartPosition.CenterScreen;
+                formABMUsuario.TipoOperacion = Constantes.Operacion.Eliminar;
+                formABMUsuario.UsuarioEditar = usuarioBL.VerUsuarioId(mid);
+                formABMUsuario.ShowDialog();
+                Actualizar();
+            }
+            else
+            {
+                MessageBox.Show("Elegir Usuario a Eliminar");
+            }
+        }
     }
 }
