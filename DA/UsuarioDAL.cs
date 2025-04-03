@@ -131,7 +131,28 @@ namespace DA
                 }
             }
         }
-
+        public int EditarUsuario(Usuario u)
+        {
+            using (SqlConnection con=connection)
+            {
+                con.Open();
+                using (SqlCommand cmd=new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "UPDATE Usuario SET Nombre=@Nombre,Apellido=@Apellido,DNI=@DNI,Clave=@Clave,Correo=@Correo,Telefono=@Telefono " +
+                        " WHERE Id=@Id";
+                    cmd.Parameters.AddWithValue("@Id",u.Id);
+                    cmd.Parameters.AddWithValue("@Nombre",u.Nombre);
+                    cmd.Parameters.AddWithValue("@Apellido",u.Apellido);
+                    cmd.Parameters.AddWithValue("@DNI",u.DNI);
+                    cmd.Parameters.AddWithValue("@Clave",u.Clave);
+                    cmd.Parameters.AddWithValue("@Correo",u.Correo);
+                    cmd.Parameters.AddWithValue("@Telefono",u.Telefono);
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
         #endregion
     }
 }
