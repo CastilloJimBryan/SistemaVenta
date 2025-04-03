@@ -53,6 +53,12 @@
     <Compile Include="FormABMUsuario.Designer.cs">
       <DependentUpon>FormABMUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListadoBitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoBitacora.Designer.cs">
+      <DependentUpon>FormListadoBitacora.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormListadoEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormABMUsuario.resx">
       <DependentUpon>FormABMUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoBitacora.resx">
+      <DependentUpon>FormListadoBitacora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListadoEmpleados.resx">
       <DependentUpon>FormListadoEmpleados.cs</DependentUpon>

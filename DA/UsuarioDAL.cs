@@ -33,9 +33,10 @@ namespace DA
                         {
                             return new Usuario
                             {
+                                Id= int.Parse(dr["Id"].ToString()),
                                 Nombre = dr["Nombre"].ToString(),
                                 Apellido = dr["Apellido"].ToString(),
-                                DNI = int.Parse(dr["dni"].ToString()),
+                                DNI = int.Parse(dr["DNI"].ToString()),
                                 Clave = dr["Clave"].ToString(),
                                 Correo = dr["Correo"].ToString(),
                                 Telefono = int.Parse(dr["Telefono"].ToString()),

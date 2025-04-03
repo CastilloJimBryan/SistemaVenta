@@ -62,5 +62,13 @@ namespace Sistema_Venta
         {
             Application.Exit();
         }
+
+        private void visualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListadoBitacora formListadoBitacora = new FormListadoBitacora();
+            formListadoBitacora.StartPosition= FormStartPosition.CenterScreen;
+            formListadoBitacora.MdiParent= this;
+            formListadoBitacora.Show();
+        }
     }
 }

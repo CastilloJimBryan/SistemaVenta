@@ -120,15 +120,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(356, 250);
+            this.textBox1.Location = new System.Drawing.Point(254, 245);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(271, 22);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(236, 253);
+            this.lblBuscar.Location = new System.Drawing.Point(134, 248);
             this.lblBuscar.Name = "lblBuscar";
             this.lblBuscar.Size = new System.Drawing.Size(114, 16);
             this.lblBuscar.TabIndex = 4;

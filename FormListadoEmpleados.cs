@@ -50,10 +50,27 @@ namespace Sistema_Venta
             {
                 dataGridView1.Rows[0].Visible = false;
                 dataGridView1.Rows[0].Selected=false;
-
             }
         }
+        void Filtrar()
+        {
+            List<Usuario> filtro = usuarioBL.ListarEmpleados();
+            if (!String.IsNullOrEmpty(textBox1.Text))
+            {
+                filtro = filtro.FindAll(u => u.Nombre.StartsWith(textBox1.Text, StringComparison.OrdinalIgnoreCase));
+            }
 
+            dataGridView1.Rows.Clear();
+
+            foreach(var u in  filtro)
+            {
+                if (u.Id != 1)
+                {
+                    dataGridView1.Rows.Add(u.Id, u.Nombre, u.Apellido, u.DNI, u.Telefono, u.Correo, u.Estado ? "Activo" : "No Activo");
+                }
+            }
+            
+        }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             FormABMUsuario formABMUsuario = new FormABMUsuario();
@@ -114,6 +131,11 @@ namespace Sistema_Venta
             {
                 MessageBox.Show("Elegir Usuario a Eliminar");
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Filtrar();
         }
     }
 }

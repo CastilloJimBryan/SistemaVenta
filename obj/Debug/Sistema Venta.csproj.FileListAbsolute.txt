@@ -20,3 +20,4 @@ C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormLogin.resour
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormMenu.resources
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormListadoEmpleados.resources
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormABMUsuario.resources
+C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormListadoBitacora.resources

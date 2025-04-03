@@ -35,7 +35,7 @@ namespace DA
                                 Id = int.Parse(dr["Id"].ToString()),
                                 UsuarioId = int.Parse(dr["UsuarioId"].ToString()),
                                 Usuario = dr["Usuario"].ToString(),
-                                Actividad = dr["Activida"].ToString(),
+                                Actividad = dr["Actividad"].ToString(),
                                 Fecha = DateTime.Parse(dr["Fecha"].ToString())
                             });
                         }
