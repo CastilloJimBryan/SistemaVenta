@@ -70,5 +70,21 @@ namespace Sistema_Venta
             formListadoBitacora.MdiParent= this;
             formListadoBitacora.Show();
         }
+
+        private void listadoProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListadoProducto formListadoProducto = new FormListadoProducto();
+            formListadoProducto.StartPosition = FormStartPosition.CenterScreen;
+            formListadoProducto.MdiParent = this;
+            formListadoProducto.Show();
+        }
+
+        private void listadoCategoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCategoria formCategoria = new FormCategoria();
+            formCategoria.StartPosition= FormStartPosition.CenterScreen;
+            formCategoria.MdiParent=this;
+            formCategoria.Show();
+        }
     }
 }

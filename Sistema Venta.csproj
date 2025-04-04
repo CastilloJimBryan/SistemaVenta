@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +54,12 @@
     <Compile Include="FormABMUsuario.Designer.cs">
       <DependentUpon>FormABMUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoria.Designer.cs">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormListadoBitacora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +71,12 @@
     </Compile>
     <Compile Include="FormListadoEmpleados.Designer.cs">
       <DependentUpon>FormListadoEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListadoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoProducto.Designer.cs">
+      <DependentUpon>FormListadoProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -82,11 +95,17 @@
     <EmbeddedResource Include="FormABMUsuario.resx">
       <DependentUpon>FormABMUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoria.resx">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormListadoBitacora.resx">
       <DependentUpon>FormListadoBitacora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListadoEmpleados.resx">
       <DependentUpon>FormListadoEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoProducto.resx">
+      <DependentUpon>FormListadoProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
