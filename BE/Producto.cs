@@ -8,7 +8,23 @@ namespace BE
 {
     public class Producto:Entity
     {
-		private int codigo;
+		List<Categoria> _categorias;
+		public List<Categoria> Categorias
+		{
+			get { return _categorias; }
+		}
+        public Producto()
+        {
+            _categorias = new List<Categoria>();
+        }
+		public void AgregarCategoria(Categoria c)
+		{
+			if(!_categorias.Contains(c))
+			{
+				_categorias.Add(c);
+			}
+		}
+        private int codigo;
 
 		public int Codigo
 		{
