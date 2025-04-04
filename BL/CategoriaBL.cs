@@ -21,5 +21,9 @@ namespace BL
         {
             return CategoriaDAL.AgregarCategoria(c);
         }
+        public List<Categoria> ListadoCategoria()
+        {
+            return CategoriaDAL.ListadoCategoria();
+        }
     }
 }
