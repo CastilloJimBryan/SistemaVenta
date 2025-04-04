@@ -21,10 +21,8 @@ namespace DA
                 using (SqlCommand cmd = new SqlCommand())
                 {
                     cmd.Connection= con;
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "SELECT Bitacora.Id,Actividad,Fecha,Usuario.Id as UsuarioId,Usuario.Nombre as Usuario" +
-                        " FROM Bitacora" +
-                        " INNER JOIN Usuario ON Bitacora.UsuarioId=Usuario.Id";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "ListadoBitacora";
                     List<Bitacora> list=new List<Bitacora>();
                     using (SqlDataReader dr=cmd.ExecuteReader())
                     {
@@ -53,9 +51,8 @@ namespace DA
                 using (SqlCommand cmd=new SqlCommand())
                 {
                     cmd.Connection = con;
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "INSERT INTO Bitacora (UsuarioId,Actividad,Fecha) " +
-                        " VALUES (@UsuarioId,@Actividad,@Fecha)";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "AgregarBitacora";
                     cmd.Parameters.AddWithValue("@UsuarioId",u.Id);
                     cmd.Parameters.AddWithValue("@Actividad",actividad);
                     cmd.Parameters.AddWithValue("@Fecha",DateTime.Now);
