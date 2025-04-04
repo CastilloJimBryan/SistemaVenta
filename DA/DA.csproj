@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BitacoraDAL.cs" />
+    <Compile Include="CategoriaDAL.cs" />
+    <Compile Include="ProductoDAL.cs" />
     <Compile Include="UsuarioDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

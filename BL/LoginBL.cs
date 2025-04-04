@@ -28,7 +28,7 @@ namespace BL
             Usuario u = usuarioDAL.ObtenerUserPass(nom, hashpsw);
             if(u == null) { throw new Exception("Usuario / Contraseña Incorrecto!");  }
             ManejoSesion.LogIn(u);
-                
+
             //bitacoraBL.AgregarBitacora(u, "Inicio Sesion");
         }
         public void Logout()
