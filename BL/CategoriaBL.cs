@@ -21,6 +21,14 @@ namespace BL
         {
             return CategoriaDAL.AgregarCategoria(c);
         }
+        public int EliminarCategoria(Categoria c)
+        {
+            return CategoriaDAL.EliminarCategoria(c);
+        }
+        public int EditarCategoria(Categoria c)
+        {
+            return CategoriaDAL.EditarCategoria(c);
+        }
         public List<Categoria> ListadoCategoria()
         {
             return CategoriaDAL.ListadoCategoria();

@@ -1,6 +1,7 @@
 ﻿using BE;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -54,6 +55,37 @@ namespace DA
                         return list;
                     }
 
+                }
+            }
+        }
+        public int EditarCategoria(Categoria c)
+        {
+            using (SqlConnection con=connection)
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "UPDATE Categoria SET Nombre=@Nombre WHERE Id=@Id";
+                    cmd.Parameters.AddWithValue("@Id", c.Id);
+                    cmd.Parameters.AddWithValue("@Nombre",c.Nombre);
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        public int EliminarCategoria(Categoria c)
+        {
+            using (SqlConnection con = connection)
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "DELETE FROM Categoria WHERE Id=@Id";
+                    cmd.Parameters.AddWithValue("@Id",c.Id);
+                    return cmd.ExecuteNonQuery();
                 }
             }
         }
