@@ -33,5 +33,9 @@ namespace BL
         {
             return CategoriaDAL.ListadoCategoria();
         }
+        public Categoria VerCategoria(int mid)
+        {
+            return CategoriaDAL.VerCategoria(mid);
+        }
     }
 }

@@ -24,7 +24,7 @@ namespace Sistema_Venta
 
         private void FormCategoria_Load(object sender, EventArgs e)
         {
-            dataGridView1.Columns.Add("Id", "Id");
+                dataGridView1.Columns.Add("Id", "Id");
             dataGridView1.Columns["Id"].Visible=false;
             dataGridView1.Columns.Add("Nombre", "Nombre");
 
@@ -64,6 +64,57 @@ namespace Sistema_Venta
             else
             {
                 MessageBox.Show("error");
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int mid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                Categoria c= categoriaBL.VerCategoria(mid);
+                string textoEditado = Interaction.InputBox("Editar Categoria: ", "", c.Nombre);
+                if (!String.IsNullOrEmpty(textoEditado))
+                {
+                    c.Nombre = textoEditado;
+                    categoriaBL.EditarCategoria(c);
+                    MessageBox.Show("Se Edito Categoria!");
+                    Actualizar();
+
+                }
+                else
+                {
+                    MessageBox.Show("No se Edito Categoria");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe Elegir una Categoria");
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if(dataGridView1.SelectedRows.Count> 0)
+            {
+                int mid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                Categoria c=categoriaBL.VerCategoria(mid);
+                string textoEditado = Interaction.InputBox("Eliminar Categoria: ", "", c.Nombre);
+                if (!String.IsNullOrEmpty(textoEditado))
+                {
+                    categoriaBL.EliminarCategoria(c);
+                    MessageBox.Show("Se Elimino Categoria!");
+                    Actualizar();
+
+                }
+                else
+                {
+                    MessageBox.Show("No se Elimino la Categoria");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe Elegir una Categoria");
             }
         }
     }

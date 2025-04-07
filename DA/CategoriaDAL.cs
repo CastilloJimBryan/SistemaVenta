@@ -30,6 +30,33 @@ namespace DA
                 }
             }
         }
+        public Categoria VerCategoria(int mid)
+        {
+            using (SqlConnection con=connection)
+            {
+                con.Open();
+                using (SqlCommand cmd=new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType= CommandType.Text;
+                    cmd.CommandText = "SELECT * FROM Categoria WHERE Id=@Id";
+                    cmd.Parameters.AddWithValue("@Id", mid);
+                    using (SqlDataReader dr=cmd.ExecuteReader())
+                    {
+                        if(dr.Read())
+                        {
+                            return new Categoria()
+                            {
+                                Id = int.Parse(dr["Id"].ToString()),
+                                Nombre = dr["Nombre"].ToString()
+                            };
+                        }
+                        return null;
+                    }
+                        
+                }
+            }
+        }
         public List<Categoria> ListadoCategoria()
         {
             using (SqlConnection con = connection)
