@@ -47,5 +47,14 @@ namespace Sistema_Venta
             }
            
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FormABMProducto formABMProducto = new FormABMProducto();
+            formABMProducto.StartPosition= FormStartPosition.CenterScreen;
+            formABMProducto.TipoOperacion= Constantes.Operacion.Agregar;
+            formABMProducto.ShowDialog();
+            Actualizar();
+        }
     }
 }

@@ -23,3 +23,4 @@ C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormABMUsuario.r
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormListadoBitacora.resources
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormListadoProducto.resources
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormCategoria.resources
+C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormABMProducto.resources

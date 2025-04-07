@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constantes.cs" />
+    <Compile Include="FormABMProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormABMProducto.Designer.cs">
+      <DependentUpon>FormABMProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormABMUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormABMProducto.resx">
+      <DependentUpon>FormABMProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormABMUsuario.resx">
       <DependentUpon>FormABMUsuario.cs</DependentUpon>
     </EmbeddedResource>

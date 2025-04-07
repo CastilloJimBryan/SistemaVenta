@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formabmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formabmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|C:\\Users\\Navegador\\Desktop\\SistemaVenta\\formcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formabmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formabmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA33BD60-B99D-4745-816A-020B89ADAEAA}|DA\\DA.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\da\\productodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA33BD60-B99D-4745-816A-020B89ADAEAA}|DA\\DA.csproj|solutionrelative:da\\productodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|C:\\Users\\Navegador\\Desktop\\SistemaVenta\\formlistadoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formlistadoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formlistadoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formlistadoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|C:\\Users\\Navegador\\Desktop\\SistemaVenta\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,49 +34,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormCategoria.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormCategoria.cs",
-              "RelativeDocumentMoniker": "FormCategoria.cs",
-              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormCategoria.cs",
-              "RelativeToolTip": "FormCategoria.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAtwFYAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ProductoDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\DA\\ProductoDAL.cs",
+              "RelativeDocumentMoniker": "DA\\ProductoDAL.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\DA\\ProductoDAL.cs",
+              "RelativeToolTip": "DA\\ProductoDAL.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T16:00:22.686Z",
+              "WhenOpened": "2025-04-07T16:41:39.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormABMProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormABMProducto.cs",
+              "RelativeDocumentMoniker": "FormABMProducto.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormABMProducto.cs",
+              "RelativeToolTip": "FormABMProducto.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAlwGAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T15:09:55.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormCategoria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormCategoria.cs",
-              "RelativeDocumentMoniker": "FormCategoria.cs",
-              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormCategoria.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormCategoria.cs [Dise\u00F1o]",
+              "Title": "FormABMProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormABMProducto.cs",
+              "RelativeDocumentMoniker": "FormABMProducto.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormABMProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormABMProducto.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T15:57:47.543Z",
+              "WhenOpened": "2025-04-07T15:07:40.87Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "FormListadoProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoProducto.cs",
+              "RelativeDocumentMoniker": "FormListadoProducto.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormListadoProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T13:56:17.812Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FormListadoProducto.cs",
               "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoProducto.cs",
               "RelativeDocumentMoniker": "FormListadoProducto.cs",
               "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoProducto.cs",
               "RelativeToolTip": "FormListadoProducto.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwC8AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T13:37:34.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "FormMenu.cs",
               "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormMenu.cs",
               "RelativeDocumentMoniker": "FormMenu.cs",
@@ -76,7 +109,8 @@
               "RelativeToolTip": "FormMenu.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAawFYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T13:03:15.777Z"
+              "WhenOpened": "2025-04-04T13:03:15.777Z",
+              "EditorCaption": ""
             }
           ]
         }
