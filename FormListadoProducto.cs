@@ -14,8 +14,10 @@ namespace Sistema_Venta
 {
     public partial class FormListadoProducto: Form
     {
+        ProductoBL productoBL;
         public FormListadoProducto()
         {
+            productoBL = new ProductoBL();
             InitializeComponent();
         }
 
@@ -43,7 +45,7 @@ namespace Sistema_Venta
             dataGridView1.Rows.Clear();
             foreach (Producto p in (new ProductoBL().ListarProducto()))
             {
-                dataGridView1.Rows.Add(p.Id,p.Nombre,p.Descripcion,p.Categoria,p.PrecioCompra,p.PrecioVenta,p.CantidadMinima,p.CantidadMaxima);
+                dataGridView1.Rows.Add(p.Id,p.Codigo,p.Nombre,p.Descripcion,p.Categoria,p.PrecioCompra,p.PrecioVenta,p.CantidadMinima,p.CantidadMaxima);
             }
            
         }
@@ -56,5 +58,58 @@ namespace Sistema_Venta
             formABMProducto.ShowDialog();
             Actualizar();
         }
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count>0)
+            {
+                int mid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                FormABMProducto formABMProducto = new FormABMProducto();
+                formABMProducto.StartPosition = FormStartPosition.CenterScreen;
+                formABMProducto.ProductoEditar=productoBL.VerProductoId(mid);
+                formABMProducto.TipoOperacion = Constantes.Operacion.Ver;
+                formABMProducto.ShowDialog();
+                Actualizar();
+            }
+            else
+            {
+                MessageBox.Show("Debe Elegir Algun Producto");
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+            if (dataGridView1.SelectedRows.Count>0)
+            {
+                int mid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                FormABMProducto formABMProducto = new FormABMProducto();
+                formABMProducto.StartPosition = FormStartPosition.CenterScreen;
+                formABMProducto.TipoOperacion = Constantes.Operacion.Modificar;
+                formABMProducto.ShowDialog();
+                Actualizar();
+            }
+            else
+            {
+                MessageBox.Show("Debe Elegir Algun Producto");
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count>0)
+            {
+                int mid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                FormABMProducto formABMProducto = new FormABMProducto();
+                formABMProducto.StartPosition = FormStartPosition.CenterScreen;
+                formABMProducto.TipoOperacion = Constantes.Operacion.Eliminar;
+                formABMProducto.ShowDialog();
+                Actualizar();
+            }
+            else
+            {
+                MessageBox.Show("Debe Elegir Algun Producto");
+            }
+        }
+
     }
 }

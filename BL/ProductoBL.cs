@@ -19,5 +19,13 @@ namespace BL
         {
             return productoDAL.ListadoProducto();
         }
+        public void AgregarProducto(Producto p)
+        {
+             productoDAL.AgregarProducto(p);
+        }
+        public Producto VerProductoId(int mid)
+        {
+            return productoDAL.VerProductoId(mid);
+        }
     }
 }

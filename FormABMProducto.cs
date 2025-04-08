@@ -55,6 +55,11 @@ namespace Sistema_Venta
                 case Constantes.Operacion.Ver:
                     gpxProducto.Text = "Datos de Productos";
                     btnAceptar.Visible = false;
+                    if(ProductoEditar==null)
+                    {
+                        MessageBox.Show("Error!");
+                    }
+                    TraerDatos(ProductoEditar);
                     break;
                 case Constantes.Operacion.Eliminar:
                     gpxProducto.Text = "Eliminacion de Productos";
@@ -65,6 +70,19 @@ namespace Sistema_Venta
                     break;
             }
         }
+
+        void TraerDatos(Producto p)
+        {
+            textBox1.Text=p.Codigo.ToString();
+            textBox2.Text=p.Nombre.ToString();
+            textBox3.Text=p.Descripcion.ToString();
+            textBox4.Text=p.PrecioCompra.ToString();
+            textBox5.Text=p.PrecioVenta.ToString();
+            textBox6.Text=p.CantidadMinima.ToString();
+            textBox7.Text=p.CantidadMaxima.ToString();
+            comboBox1.Text=p.Categoria;
+        }
+
         Categoria comboSeleccionado;
         void CompletarCampos(Producto p)
         {
@@ -94,7 +112,6 @@ namespace Sistema_Venta
                     CompletarCampos(ProductoEditar);
                     ProductoEditar.AgregarCategoria(comboSeleccionado);
                     productoBL.AgregarProducto(ProductoEditar);
-                    ///
                     this.Close();
                     break;
                 case Constantes.Operacion.Modificar:
