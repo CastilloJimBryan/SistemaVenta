@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|C:\\Users\\Navegador\\Desktop\\SistemaVenta\\formabmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formabmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BA33BD60-B99D-4745-816A-020B89ADAEAA}|DA\\DA.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\da\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA33BD60-B99D-4745-816A-020B89ADAEAA}|DA\\DA.csproj|solutionrelative:da\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA33BD60-B99D-4745-816A-020B89ADAEAA}|DA\\DA.csproj|C:\\Users\\Navegador\\Desktop\\SistemaVenta\\da\\productodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA33BD60-B99D-4745-816A-020B89ADAEAA}|DA\\DA.csproj|solutionrelative:da\\productodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formlistadohistorialempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formlistadohistorialempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|C:\\Users\\Navegador\\Desktop\\SistemaVenta\\formlistadoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formlistadoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formlistadoempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formlistadoempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formabmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formabmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{442B66DA-DD9E-44DB-816A-B9703B3B6036}|BE\\BE.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\be\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{442B66DA-DD9E-44DB-816A-B9703B3B6036}|BE\\BE.csproj|solutionrelative:be\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formlistadohistorialempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formlistadohistorialempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formlistadoempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formlistadoempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|c:\\users\\navegador\\desktop\\sistemaventa\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AC75BA3B-C224-43BA-97C8-B3F043E0A048}|Sistema Venta.csproj|solutionrelative:formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +38,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FormABMProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormABMProducto.cs",
-              "RelativeDocumentMoniker": "FormABMProducto.cs",
-              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormABMProducto.cs",
-              "RelativeToolTip": "FormABMProducto.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAowJ4AAAAIAAAAAAAAAA==",
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\BE\\Usuario.cs",
+              "RelativeDocumentMoniker": "BE\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\BE\\Usuario.cs",
+              "RelativeToolTip": "BE\\Usuario.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T15:09:55.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormListadoProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoProducto.cs",
-              "RelativeDocumentMoniker": "FormListadoProducto.cs",
-              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoProducto.cs",
-              "RelativeToolTip": "FormListadoProducto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAswHEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T13:37:34.653Z",
+              "WhenOpened": "2025-04-09T16:02:22.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormABMProducto.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormABMProducto.cs",
-              "RelativeDocumentMoniker": "FormABMProducto.cs",
-              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormABMProducto.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormABMProducto.cs [Dise\u00F1o]",
+              "Title": "UsuarioDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\DA\\UsuarioDAL.cs",
+              "RelativeDocumentMoniker": "DA\\UsuarioDAL.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\DA\\UsuarioDAL.cs",
+              "RelativeToolTip": "DA\\UsuarioDAL.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAgwM4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T15:07:40.87Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-04-09T15:38:06.053Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductoDAL.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\DA\\ProductoDAL.cs",
-              "RelativeDocumentMoniker": "DA\\ProductoDAL.cs",
-              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\DA\\ProductoDAL.cs",
-              "RelativeToolTip": "DA\\ProductoDAL.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAIwMcAAAAIAAAAAAAAAA==",
+              "Title": "FormListadoHistorialEmpleados.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoHistorialEmpleados.cs",
+              "RelativeDocumentMoniker": "FormListadoHistorialEmpleados.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoHistorialEmpleados.cs",
+              "RelativeToolTip": "FormListadoHistorialEmpleados.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T16:37:15.534Z",
+              "WhenOpened": "2025-04-09T15:32:55.944Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormListadoHistorialEmpleados.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoHistorialEmpleados.cs",
+              "RelativeDocumentMoniker": "FormListadoHistorialEmpleados.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoHistorialEmpleados.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormListadoHistorialEmpleados.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T15:31:49.312Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormListadoEmpleados.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoEmpleados.cs",
+              "RelativeDocumentMoniker": "FormListadoEmpleados.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoEmpleados.cs",
+              "RelativeToolTip": "FormListadoEmpleados.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAgwJUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T15:30:50.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormListadoEmpleados.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoEmpleados.cs",
+              "RelativeDocumentMoniker": "FormListadoEmpleados.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormListadoEmpleados.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormListadoEmpleados.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T15:27:44.98Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormMenu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormMenu.cs",
+              "RelativeDocumentMoniker": "FormMenu.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\SistemaVenta\\FormMenu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormMenu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T15:26:20.356Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

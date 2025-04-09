@@ -77,7 +77,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(180, 111);
+            this.comboBox1.Location = new System.Drawing.Point(181, 102);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(135, 24);
             this.comboBox1.TabIndex = 15;
@@ -85,7 +85,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(180, 203);
+            this.textBox7.Location = new System.Drawing.Point(181, 194);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(135, 24);
             this.textBox7.TabIndex = 14;
@@ -93,7 +93,7 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(6, 203);
+            this.textBox6.Location = new System.Drawing.Point(7, 194);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(135, 24);
             this.textBox6.TabIndex = 13;
@@ -101,7 +101,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(180, 157);
+            this.textBox5.Location = new System.Drawing.Point(181, 148);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(135, 24);
             this.textBox5.TabIndex = 12;
@@ -109,7 +109,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(6, 157);
+            this.textBox4.Location = new System.Drawing.Point(7, 148);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(135, 24);
             this.textBox4.TabIndex = 11;
@@ -117,7 +117,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(180, 65);
+            this.textBox3.Location = new System.Drawing.Point(181, 56);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(135, 24);
             this.textBox3.TabIndex = 10;
@@ -125,7 +125,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(6, 111);
+            this.textBox2.Location = new System.Drawing.Point(7, 102);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(135, 24);
             this.textBox2.TabIndex = 9;
@@ -133,7 +133,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 65);
+            this.textBox1.Location = new System.Drawing.Point(7, 56);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(135, 24);
             this.textBox1.TabIndex = 8;
@@ -141,7 +141,7 @@
             // lblCantidadMaxima
             // 
             this.lblCantidadMaxima.AutoSize = true;
-            this.lblCantidadMaxima.Location = new System.Drawing.Point(189, 184);
+            this.lblCantidadMaxima.Location = new System.Drawing.Point(190, 175);
             this.lblCantidadMaxima.Name = "lblCantidadMaxima";
             this.lblCantidadMaxima.Size = new System.Drawing.Size(126, 16);
             this.lblCantidadMaxima.TabIndex = 7;
@@ -150,7 +150,7 @@
             // lblCantidadMinima
             // 
             this.lblCantidadMinima.AutoSize = true;
-            this.lblCantidadMinima.Location = new System.Drawing.Point(6, 184);
+            this.lblCantidadMinima.Location = new System.Drawing.Point(7, 175);
             this.lblCantidadMinima.Name = "lblCantidadMinima";
             this.lblCantidadMinima.Size = new System.Drawing.Size(122, 16);
             this.lblCantidadMinima.TabIndex = 6;
@@ -159,7 +159,7 @@
             // lblPrecioVenta
             // 
             this.lblPrecioVenta.AutoSize = true;
-            this.lblPrecioVenta.Location = new System.Drawing.Point(189, 138);
+            this.lblPrecioVenta.Location = new System.Drawing.Point(190, 129);
             this.lblPrecioVenta.Name = "lblPrecioVenta";
             this.lblPrecioVenta.Size = new System.Drawing.Size(96, 16);
             this.lblPrecioVenta.TabIndex = 5;
@@ -168,7 +168,7 @@
             // lblPrecioCompra
             // 
             this.lblPrecioCompra.AutoSize = true;
-            this.lblPrecioCompra.Location = new System.Drawing.Point(6, 138);
+            this.lblPrecioCompra.Location = new System.Drawing.Point(7, 129);
             this.lblPrecioCompra.Name = "lblPrecioCompra";
             this.lblPrecioCompra.Size = new System.Drawing.Size(110, 16);
             this.lblPrecioCompra.TabIndex = 4;
@@ -177,7 +177,7 @@
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(189, 92);
+            this.lblCategoria.Location = new System.Drawing.Point(190, 83);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(75, 16);
             this.lblCategoria.TabIndex = 3;
@@ -186,7 +186,7 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(189, 46);
+            this.lblDescripcion.Location = new System.Drawing.Point(190, 37);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(90, 16);
             this.lblDescripcion.TabIndex = 2;
@@ -195,7 +195,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(6, 92);
+            this.lblNombre.Location = new System.Drawing.Point(7, 83);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(62, 16);
             this.lblNombre.TabIndex = 1;
@@ -204,7 +204,7 @@
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(6, 46);
+            this.lblCodigo.Location = new System.Drawing.Point(7, 37);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(57, 16);
             this.lblCodigo.TabIndex = 0;

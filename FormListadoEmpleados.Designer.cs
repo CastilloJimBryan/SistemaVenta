@@ -37,6 +37,7 @@
             this.btnVer = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
+            this.btnRestaurar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -120,7 +121,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(254, 245);
+            this.textBox1.Location = new System.Drawing.Point(262, 245);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(271, 22);
             this.textBox1.TabIndex = 3;
@@ -131,15 +132,26 @@
             this.lblBuscar.AutoSize = true;
             this.lblBuscar.Location = new System.Drawing.Point(134, 248);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(114, 16);
+            this.lblBuscar.Size = new System.Drawing.Size(122, 16);
             this.lblBuscar.TabIndex = 4;
-            this.lblBuscar.Text = "Buscar Nombre";
+            this.lblBuscar.Text = "Buscar Nombre :";
+            // 
+            // btnRestaurar
+            // 
+            this.btnRestaurar.Location = new System.Drawing.Point(745, 250);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(103, 35);
+            this.btnRestaurar.TabIndex = 5;
+            this.btnRestaurar.Text = "Restaurar";
+            this.btnRestaurar.UseVisualStyleBackColor = true;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
             // 
             // FormListadoEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 297);
+            this.Controls.Add(this.btnRestaurar);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox2);
@@ -169,5 +181,6 @@
         private System.Windows.Forms.Button btnVer;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblBuscar;
+        private System.Windows.Forms.Button btnRestaurar;
     }
 }

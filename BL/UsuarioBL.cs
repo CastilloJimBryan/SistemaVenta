@@ -40,5 +40,12 @@ namespace BL
             return usuarioDAL.EliminarUsuario(u);
         }
         #endregion
+
+        #region HistorialUsuario
+        public List<HistorialUsuario>ListarHistorial(int mid)
+        {
+            return usuarioDAL.ListarHistorial(mid);
+        }
+        #endregion
     }
 }

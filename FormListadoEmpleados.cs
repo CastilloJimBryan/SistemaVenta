@@ -137,5 +137,19 @@ namespace Sistema_Venta
         {
             Filtrar();
         }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+            if(dataGridView1.SelectedRows.Count>0)
+            {
+                int mid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+
+                FormListadoHistorialEmpleados formListadoHistorialEmpleados = new FormListadoHistorialEmpleados();
+                formListadoHistorialEmpleados.StartPosition = FormStartPosition.CenterScreen;
+                formListadoHistorialEmpleados.UsuarioSeleccionado = usuarioBL.VerUsuarioId(mid);
+                formListadoHistorialEmpleados.ShowDialog();
+                Actualizar();
+            }
+        }
     }
 }

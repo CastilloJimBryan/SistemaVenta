@@ -71,7 +71,6 @@ namespace DA
                                 DNI = int.Parse(dr["DNI"].ToString() ),
                                 Telefono = int.Parse(dr["Telefono"].ToString()),
                                 Correo = dr["Correo"].ToString (),
-                                Clave = dr["Clave"].ToString (),
                                 Estado = bool.Parse(dr["Estado"].ToString())
                             });
                         }
@@ -168,6 +167,45 @@ namespace DA
                 }
             }
         }
+        #endregion
+
+        #region HistorialUsuario
+
+        public List<HistorialUsuario> ListarHistorial(int mid)
+        {
+            using (SqlConnection con = connection)
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "SELECT * FROM HistorialUsuario WHERE IdOriginal=@IdOriginal";
+                    cmd.Parameters.AddWithValue("@IdOriginal",mid);
+                    List<HistorialUsuario> list = new List<HistorialUsuario>();
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            list.Add(new HistorialUsuario
+                            {
+                                Id = int.Parse(dr["id"].ToString()),
+                                IdOriginal = int.Parse(dr["idOriginal"].ToString()),
+                                Nombre = dr["Nombre"].ToString(),
+                                Apellido = dr["Apellido"].ToString(),
+                                DNI = int.Parse(dr["DNI"].ToString()),
+                                Telefono = int.Parse(dr["Telefono"].ToString()),
+                                Correo = dr["Correo"].ToString(),
+                                Estado = bool.Parse(dr["Estado"].ToString()),
+                                Fecha = DateTime.Parse(dr["Fecha"].ToString())
+                            });
+                        }
+                        return list;
+                    }
+                }
+            }
+        }
+
         #endregion
     }
 }
