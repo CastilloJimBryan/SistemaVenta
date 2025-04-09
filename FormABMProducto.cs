@@ -22,6 +22,7 @@ namespace Sistema_Venta
             categoriaBL = new CategoriaBL();
             productoBL = new ProductoBL();
             InitializeComponent();
+            ListarCategoria();
         }
         internal Producto ProductoEditar {  get; set; }
         internal Constantes.Operacion TipoOperacion {  get; set; }
@@ -29,7 +30,6 @@ namespace Sistema_Venta
         {
             inicializar();
             btnCancelar.Text = "Cerrar";
-            ListarCategoria();
         }
         void ListarCategoria()
         {
@@ -50,7 +50,11 @@ namespace Sistema_Venta
                 case Constantes.Operacion.Modificar:
                     gpxProducto.Text = "Edicion de Productos";
                     btnAceptar.Text = "Editar";
-
+                    if(ProductoEditar==null)
+                    {
+                        MessageBox.Show("Error!");
+                    }
+                    TraerDatos(ProductoEditar);
                     break;
                 case Constantes.Operacion.Ver:
                     gpxProducto.Text = "Datos de Productos";
@@ -60,17 +64,34 @@ namespace Sistema_Venta
                         MessageBox.Show("Error!");
                     }
                     TraerDatos(ProductoEditar);
+                    SoloLectura();
                     break;
                 case Constantes.Operacion.Eliminar:
-                    gpxProducto.Text = "Eliminacion de Productos";
+                    gpxProducto.Text = "Eliminar Producto";
                     btnAceptar.Text = "Eliminar";
-
+                    btnAceptar.BackColor = Color.Red;
+                    if(ProductoEditar==null)
+                    {
+                        MessageBox.Show("Error!");
+                    }
+                    TraerDatos(ProductoEditar);
+                    SoloLectura();
                     break;
                 default:
                     break;
             }
         }
-
+        void SoloLectura()
+        {
+            textBox1.ReadOnly = true;
+            textBox2.ReadOnly = true;
+            textBox3.ReadOnly = true;
+            textBox4.ReadOnly = true;
+            textBox5.ReadOnly = true;
+            textBox6.ReadOnly = true;
+            textBox7.ReadOnly = true;
+            comboBox1.Enabled = false;
+        }
         void TraerDatos(Producto p)
         {
             textBox1.Text=p.Codigo.ToString();
@@ -115,8 +136,22 @@ namespace Sistema_Venta
                     this.Close();
                     break;
                 case Constantes.Operacion.Modificar:
+                    if(ProductoEditar != null)
+                    {
+                        CompletarCampos(ProductoEditar);
+                        productoBL.EditarRelacionProductoCategoria(ProductoEditar);
+                        productoBL.EditarProducto(ProductoEditar);
+                    }
+                    this.Close();
                     break;
                 case Constantes.Operacion.Eliminar:
+                    if (ProductoEditar != null)
+                    {
+                        ProductoEditar.QuitarCategoria(comboSeleccionado);
+                        productoBL.EliminarRelacionProductoCategoria(ProductoEditar);
+                        productoBL.EliminarProducto(ProductoEditar);
+                    }
+                    this.Close();
                     break;
                 default:
                     break;

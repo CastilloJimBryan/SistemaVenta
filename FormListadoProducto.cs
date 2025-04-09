@@ -79,11 +79,12 @@ namespace Sistema_Venta
         private void btnEditar_Click(object sender, EventArgs e)
         {
 
-            if (dataGridView1.SelectedRows.Count>0)
+            if (dataGridView1.SelectedRows.Count > 0)
             {
                 int mid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
                 FormABMProducto formABMProducto = new FormABMProducto();
                 formABMProducto.StartPosition = FormStartPosition.CenterScreen;
+                formABMProducto.ProductoEditar = productoBL.VerProductoId(mid);
                 formABMProducto.TipoOperacion = Constantes.Operacion.Modificar;
                 formABMProducto.ShowDialog();
                 Actualizar();
@@ -101,6 +102,7 @@ namespace Sistema_Venta
                 int mid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
                 FormABMProducto formABMProducto = new FormABMProducto();
                 formABMProducto.StartPosition = FormStartPosition.CenterScreen;
+                formABMProducto.ProductoEditar = productoBL.VerProductoId(mid);
                 formABMProducto.TipoOperacion = Constantes.Operacion.Eliminar;
                 formABMProducto.ShowDialog();
                 Actualizar();

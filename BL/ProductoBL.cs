@@ -27,5 +27,23 @@ namespace BL
         {
             return productoDAL.VerProductoId(mid);
         }
+        public int EditarProducto(Producto p)
+        {
+            return productoDAL.EditarProducto(p);
+        }
+        public int EliminarProducto(Producto p)
+        {
+            return productoDAL.EliminarProducto(p);
+        }
+        #region RelacionCateProd
+        public int EditarRelacionProductoCategoria(Producto p)
+        {
+            return productoDAL.EditarRelacionProductoCategoria(p);
+        }
+        public int EliminarRelacionProductoCategoria(Producto p)
+        {
+            return productoDAL.EliminarRelacionProductoCategoria(p);
+        }
+        #endregion
     }
 }

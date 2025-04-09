@@ -24,6 +24,10 @@ namespace BE
 				_categorias.Add(c);
 			}
 		}
+		public void QuitarCategoria(Categoria c)
+		{
+			_categorias.Remove(c);
+		}
         private int codigo;
 
 		public int Codigo

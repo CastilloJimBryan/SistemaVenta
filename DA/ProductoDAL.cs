@@ -96,10 +96,10 @@ namespace DA
                 {
                     cmd.Connection = con;
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "select Producto.Id,Codigo,producto.nombre,Descripcion,Categoria.Nombre as Categoria,PrecioCompra,PrecioVenta,CantidadMinima,CantidadMaxima " +
-                        " from Producto " +
-                        " inner join Categoria on Producto.CategoriaId=Categoria.Id " +
-                        " where Producto.Id=@Id ";
+                    cmd.CommandText = "SELECT Producto.Id,Codigo,producto.nombre,Descripcion,Categoria.Nombre as Categoria,PrecioCompra,PrecioVenta,CantidadMinima,CantidadMaxima " +
+                        " FROM Producto " +
+                        " INNER JOIN Categoria on Producto.CategoriaId=Categoria.Id " +
+                        " WHERE Producto.Id=@Id ";
                     cmd.Parameters.AddWithValue("@Id", mid);
                     using (SqlDataReader dr=cmd.ExecuteReader())
                     {
@@ -120,6 +120,81 @@ namespace DA
                         }
                         return null;
                     }
+                }
+            }
+        }
+        #region RelacionConCategoria
+        public int EditarRelacionProductoCategoria(Producto p)
+        {
+            using (SqlConnection con=connection)
+            {
+                con.Open();
+                using (SqlCommand cmds = new SqlCommand())
+                {
+                    cmds.Connection = con;
+                    cmds.CommandType = CommandType.Text;
+                    cmds.CommandText = "UPDATE Producto_Categoria SET ProductoId=@ProductoId,CategoriaId=@CategoriaId " +
+                        " WHERE productoId=@productoId ";
+                    cmds.Parameters.AddWithValue("@ProductoId", p.Id);
+                    cmds.Parameters.AddWithValue("@CategoriaId", p.Categoria);
+                    return cmds.ExecuteNonQuery();
+                }
+            }
+        }
+        public int EliminarRelacionProductoCategoria(Producto p)
+        {
+            using (SqlConnection con = connection)
+            {
+                con.Open();
+                using (SqlCommand cmds = new SqlCommand())
+                {
+                    cmds.Connection = con;
+                    cmds.CommandType = CommandType.Text;
+                    cmds.CommandText = "DELETE Producto_Categoria WHERE ProductoId=@ProductoId";
+                    cmds.Parameters.AddWithValue("@ProductoId", p.Id);
+                    //cmds.Parameters.AddWithValue("@CategoriaId", p.Categoria);
+                    return cmds.ExecuteNonQuery();
+                }
+            }
+        }
+        #endregion
+        public int EditarProducto(Producto p)
+        {
+            using (SqlConnection con = connection)
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = " UPDATE Producto " +
+                        " SET Codigo=@Codigo,Nombre=@Nombre,Descripcion=@Descripcion,CategoriaId=@CategoriaId,PrecioCompra=@PrecioCompra,PrecioVenta=@PrecioVenta,CantidadMinima=@CantidadMinima,CantidadMaxima=@CantidadMaxima " +
+                        " WHERE Id=@Id ";
+                    cmd.Parameters.AddWithValue("@Id",p.Id);
+                    cmd.Parameters.AddWithValue("@Codigo",p.Codigo);
+                    cmd.Parameters.AddWithValue("@Nombre",p.Nombre);
+                    cmd.Parameters.AddWithValue("@Descripcion",p.Descripcion);
+                    cmd.Parameters.AddWithValue("@CategoriaId",p.Categoria);
+                    cmd.Parameters.AddWithValue("@PrecioCompra",p.PrecioCompra);
+                    cmd.Parameters.AddWithValue("@PrecioVenta",p.PrecioVenta);
+                    cmd.Parameters.AddWithValue("@CantidadMinima",p.CantidadMinima);
+                    cmd.Parameters.AddWithValue("@CantidadMaxima",p.CantidadMaxima);
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        public int EliminarProducto(Producto p)
+        {
+            using (SqlConnection con = connection)
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText ="DELETE Producto WHERE Id=@Id";
+                    cmd.Parameters.AddWithValue("@Id", p.Id);
+                    return cmd.ExecuteNonQuery();
                 }
             }
         }
