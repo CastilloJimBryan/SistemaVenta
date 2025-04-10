@@ -50,7 +50,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(715, 230);
+            this.groupBox1.Size = new System.Drawing.Size(646, 230);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Empleados";
@@ -64,7 +64,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(4, 19);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(707, 207);
+            this.dataGridView1.Size = new System.Drawing.Size(638, 207);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnAgregar
@@ -138,7 +138,7 @@
             // 
             // btnRestaurar
             // 
-            this.btnRestaurar.Location = new System.Drawing.Point(745, 250);
+            this.btnRestaurar.Location = new System.Drawing.Point(677, 250);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(103, 35);
             this.btnRestaurar.TabIndex = 5;
@@ -150,7 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 297);
+            this.ClientSize = new System.Drawing.Size(792, 297);
             this.Controls.Add(this.btnRestaurar);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.textBox1);

@@ -46,6 +46,18 @@ namespace BL
         {
             return usuarioDAL.ListarHistorial(mid);
         }
+        public int AgregarAHistorial(Usuario u)
+        {
+            return usuarioDAL.AgregarAHistorial(u);
+        }
+        public HistorialUsuario VerHistorialUsuarioId(int mid)
+        {
+            return usuarioDAL.VerHistorialUsuarioId(mid);
+        }
+        public void RestaurarUsuario(HistorialUsuario hu)
+        {
+            usuarioDAL.RestaurarUsuario(hu);
+        }
         #endregion
     }
 }

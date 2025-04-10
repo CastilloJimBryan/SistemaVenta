@@ -35,7 +35,7 @@ namespace Sistema_Venta
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false;
             dataGridView1.ReadOnly = true;
-            dataGridView1.AutoSizeColumnsMode= DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeColumnsMode= DataGridViewAutoSizeColumnsMode.AllCells;
 
             Actualizar();
         }
@@ -149,6 +149,10 @@ namespace Sistema_Venta
                 formListadoHistorialEmpleados.UsuarioSeleccionado = usuarioBL.VerUsuarioId(mid);
                 formListadoHistorialEmpleados.ShowDialog();
                 Actualizar();
+            }
+            else
+            {
+                MessageBox.Show("Debe Elegir un Empleado a Restaurar");
             }
         }
     }

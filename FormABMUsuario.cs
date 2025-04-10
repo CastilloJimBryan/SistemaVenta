@@ -119,9 +119,10 @@ namespace Sistema_Venta
                     this.Close();
                     break;
                 case Constantes.Operacion.Modificar:
-                    if (UsuarioEditar != null)
-                        CompletarCampos(UsuarioEditar);
+                    usuarioBL.AgregarAHistorial(UsuarioEditar);
+                    CompletarCampos(UsuarioEditar);
                     usuarioBL.EditarUsuario(UsuarioEditar);
+                    MessageBox.Show("Se Agrego al Historial de Cambios");
                     MessageBox.Show("Se Modifico Correctamente!");
                     this.Close();
                     break;

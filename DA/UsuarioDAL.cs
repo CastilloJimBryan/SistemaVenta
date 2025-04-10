@@ -89,7 +89,7 @@ namespace DA
                     cmd.Connection = con;
                     cmd.CommandType=CommandType.StoredProcedure;
                     cmd.CommandText = "BuscarUsuarioXId";
-                    cmd.Parameters.AddWithValue("id", mid);
+                    cmd.Parameters.AddWithValue("@Id", mid);
                     using (SqlDataReader dr=cmd.ExecuteReader())
                     {
                         if(dr.Read())
@@ -202,6 +202,83 @@ namespace DA
                         }
                         return list;
                     }
+                }
+            }
+        }
+        public HistorialUsuario VerHistorialUsuarioId(int mid)
+        {
+            using (SqlConnection con = connection)
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "SELECT * FROM HistorialUsuario WHERE Id=@Id";
+                    cmd.Parameters.AddWithValue("@Id", mid);
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            return new HistorialUsuario
+                            {
+                                Id = int.Parse(dr["Id"].ToString()),
+                                IdOriginal= int.Parse(dr["IdOriginal"].ToString()),
+                                Nombre = dr["Nombre"].ToString(),
+                                Apellido = dr["Apellido"].ToString(),
+                                Correo = dr["Correo"].ToString(),
+                                DNI = int.Parse(dr["DNI"].ToString()),
+                                Telefono = int.Parse(dr["Telefono"].ToString()),
+                                Estado = bool.Parse(dr["Estado"].ToString())
+                            };
+                        }
+                        return null;
+                    }
+                }
+            }
+        }
+        public int AgregarAHistorial(Usuario u)
+        {
+            using (SqlConnection con=connection)
+            {
+                con.Open();
+                using (SqlCommand cmd=new  SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "INSERT INTO HistorialUsuario (IdOriginal,Nombre,Apellido,DNI,Telefono,Correo,Estado,Fecha) " +
+                        " VALUES (@IdOriginal,@Nombre,@Apellido,@DNI,@Telefono,@Correo,@Estado,@Fecha) ";
+                    cmd.Parameters.AddWithValue("@IdOriginal",u.Id);
+                    cmd.Parameters.AddWithValue("@Nombre",u.Nombre);
+                    cmd.Parameters.AddWithValue("@Apellido",u.Apellido);
+                    cmd.Parameters.AddWithValue("@DNI",u.DNI);
+                    cmd.Parameters.AddWithValue("@Telefono",u.Telefono);
+                    cmd.Parameters.AddWithValue("@Correo",u.Correo);
+                    cmd.Parameters.AddWithValue("@Estado",u.Estado);
+                    cmd.Parameters.AddWithValue("@Fecha",DateTime.Now);
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        public void RestaurarUsuario(HistorialUsuario hu)
+        {
+            using (SqlConnection con = connection)
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "UPDATE Usuario SET Nombre=@Nombre,Apellido=@Apellido,DNI=@DNI,Telefono=@Telefono,Correo=@Correo,Estado=@Estado " +
+                        " WHERE Id=@Id";
+                    cmd.Parameters.AddWithValue("@Id", hu.IdOriginal);
+                    cmd.Parameters.AddWithValue("@Nombre", hu.Nombre);
+                    cmd.Parameters.AddWithValue("@Apellido", hu.Apellido);
+                    cmd.Parameters.AddWithValue("@DNI", hu.DNI);
+                    cmd.Parameters.AddWithValue("@Telefono", hu.Telefono);
+                    cmd.Parameters.AddWithValue("@Correo", hu.Correo);
+                    cmd.Parameters.AddWithValue("@Estado", hu.Estado);
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
