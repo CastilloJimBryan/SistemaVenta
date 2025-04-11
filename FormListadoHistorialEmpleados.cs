@@ -60,6 +60,8 @@ namespace Sistema_Venta
                 if(UsuarioSeleccionado.Id==hu.IdOriginal)
                 {
                     usuarioBL.RestaurarUsuario(hu);
+                    usuarioBL.EliminarDelHistorial(hu);
+                    usuarioBL.AgregarAHistorial(UsuarioSeleccionado);
                     MessageBox.Show("Se Restauro Informacion de Empleado!");
                     this.Close();
                 }

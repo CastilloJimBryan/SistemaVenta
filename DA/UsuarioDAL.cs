@@ -283,6 +283,24 @@ namespace DA
             }
         }
 
+        public void EliminarDelHistorial(HistorialUsuario hu)
+        {
+            using (SqlConnection con = connection)
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "DELETE HistorialUsuario WHERE IdOriginal =@Id";
+                    cmd.Parameters.AddWithValue("@Id", hu.IdOriginal);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+
         #endregion
     }
 }

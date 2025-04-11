@@ -104,7 +104,6 @@ namespace Sistema_Venta
             u.Correo= textBox4.Text;
             u.Telefono=int.Parse(textBox5.Text);
             u.Clave = Encriptacion.Hash(textBox3.Text);
-            u.Estado = false;
         }
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
@@ -114,6 +113,7 @@ namespace Sistema_Venta
                     if (UsuarioEditar == null)
                         UsuarioEditar = new Usuario();
                     CompletarCampos (UsuarioEditar);
+                    UsuarioEditar.Estado=false;
                     usuarioBL.AgregarUsuario(UsuarioEditar);
                     MessageBox.Show("Se Agrego Correctamente!");
                     this.Close();
@@ -127,8 +127,17 @@ namespace Sistema_Venta
                     this.Close();
                     break;
                 case Constantes.Operacion.Eliminar:
-                    if (UsuarioEditar != null)
-                        usuarioBL.EliminarUsuario (UsuarioEditar);
+                    List<HistorialUsuario> list=usuarioBL.ListarHistorial(UsuarioEditar.Id);
+                    if (list.Count > 0)
+                    {
+                        HistorialUsuario hu = new HistorialUsuario();
+                        hu.IdOriginal = list[0].IdOriginal;
+                        if (UsuarioEditar.Id.Equals(hu.IdOriginal))
+                        {
+                            usuarioBL.EliminarDelHistorial(hu);
+                        }
+                    }
+                    usuarioBL.EliminarUsuario(UsuarioEditar);
                     MessageBox.Show("Se Elimino Correctamente");
                     this.Close();
                     break;

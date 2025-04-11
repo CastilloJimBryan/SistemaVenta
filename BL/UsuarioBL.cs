@@ -58,6 +58,11 @@ namespace BL
         {
             usuarioDAL.RestaurarUsuario(hu);
         }
+
+        public void EliminarDelHistorial(HistorialUsuario hu)
+        {
+            usuarioDAL.EliminarDelHistorial(hu);
+        }
         #endregion
     }
 }
