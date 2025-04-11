@@ -86,5 +86,13 @@ namespace Sistema_Venta
             formCategoria.MdiParent=this;
             formCategoria.Show();
         }
+
+        private void rolAccionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPerfiles perfiles = new FormPerfiles();
+            perfiles.StartPosition= FormStartPosition.CenterScreen;
+            perfiles.MdiParent= this;
+            perfiles.Show();
+        }
     }
 }

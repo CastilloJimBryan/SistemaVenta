@@ -25,3 +25,4 @@ C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormListadoProdu
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormCategoria.resources
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormABMProducto.resources
 C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormListadoHistorialEmpleados.resources
+C:\Users\Navegador\Desktop\SistemaVenta\obj\Debug\Sistema_Venta.FormPerfiles.resources
