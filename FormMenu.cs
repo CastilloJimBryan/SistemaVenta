@@ -94,5 +94,13 @@ namespace Sistema_Venta
             perfiles.MdiParent= this;
             perfiles.Show();
         }
+
+        private void gestionarPermisosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPerfilesUsuario formPerfilesUsuario = new FormPerfilesUsuario();
+            formPerfilesUsuario.StartPosition= FormStartPosition.CenterScreen;
+            formPerfilesUsuario.MdiParent = this;
+            formPerfilesUsuario.Show();
+        }
     }
 }

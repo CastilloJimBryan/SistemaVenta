@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BitacoraBL.cs" />
     <Compile Include="CategoriaBL.cs" />
+    <Compile Include="ComponenteBL.cs" />
     <Compile Include="LoginBL.cs" />
     <Compile Include="ProductoBL.cs" />
     <Compile Include="UsuarioBL.cs" />

@@ -8,7 +8,19 @@ namespace BE
 {
     public class Usuario:Entity
     {
-		private string nombre;
+		List<Componente> componenteList;
+		public List<Componente> ComponenteList
+		{
+			get
+			{
+				return componenteList;
+			}
+		}
+        public Usuario()
+        {
+            componenteList = new List<Componente>();
+        }
+        private string nombre;
 
 		public string Nombre
 		{

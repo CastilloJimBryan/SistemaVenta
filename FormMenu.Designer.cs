@@ -41,13 +41,13 @@
             this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.visualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.permisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionarPermisoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rolAccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionarFamiliaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionarPermisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -161,21 +161,6 @@
             this.listadoCategoriaToolStripMenuItem.Text = "Listado Categoria";
             this.listadoCategoriaToolStripMenuItem.Click += new System.EventHandler(this.listadoCategoriaToolStripMenuItem_Click);
             // 
-            // bitacoraToolStripMenuItem
-            // 
-            this.bitacoraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.visualizarToolStripMenuItem});
-            this.bitacoraToolStripMenuItem.Name = "bitacoraToolStripMenuItem";
-            this.bitacoraToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.bitacoraToolStripMenuItem.Text = "Bitacora";
-            // 
-            // visualizarToolStripMenuItem
-            // 
-            this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
-            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.visualizarToolStripMenuItem.Text = "Visualizar";
-            this.visualizarToolStripMenuItem.Click += new System.EventHandler(this.visualizarToolStripMenuItem_Click);
-            // 
             // permisosToolStripMenuItem
             // 
             this.permisosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -191,20 +176,20 @@
             this.gestionarFamiliaToolStripMenuItem,
             this.gestionarPermisosToolStripMenuItem});
             this.gestionarPermisoToolStripMenuItem.Name = "gestionarPermisoToolStripMenuItem";
-            this.gestionarPermisoToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.gestionarPermisoToolStripMenuItem.Text = "Gestionar Permisos";
+            this.gestionarPermisoToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.gestionarPermisoToolStripMenuItem.Text = "Gestion de Permisos";
             // 
             // rolAccionToolStripMenuItem
             // 
             this.rolAccionToolStripMenuItem.Name = "rolAccionToolStripMenuItem";
-            this.rolAccionToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.rolAccionToolStripMenuItem.Text = "Rol / Accion";
+            this.rolAccionToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.rolAccionToolStripMenuItem.Text = "ABM Rol / Accion";
             this.rolAccionToolStripMenuItem.Click += new System.EventHandler(this.rolAccionToolStripMenuItem_Click);
             // 
             // gestionarFamiliaToolStripMenuItem
             // 
             this.gestionarFamiliaToolStripMenuItem.Name = "gestionarFamiliaToolStripMenuItem";
-            this.gestionarFamiliaToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.gestionarFamiliaToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.gestionarFamiliaToolStripMenuItem.Text = "Gestionar Familia";
             // 
             // gestionarPermisosToolStripMenuItem
@@ -212,6 +197,22 @@
             this.gestionarPermisosToolStripMenuItem.Name = "gestionarPermisosToolStripMenuItem";
             this.gestionarPermisosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.gestionarPermisosToolStripMenuItem.Text = "Gestionar Perfiles";
+            this.gestionarPermisosToolStripMenuItem.Click += new System.EventHandler(this.gestionarPermisosToolStripMenuItem_Click);
+            // 
+            // bitacoraToolStripMenuItem
+            // 
+            this.bitacoraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.visualizarToolStripMenuItem});
+            this.bitacoraToolStripMenuItem.Name = "bitacoraToolStripMenuItem";
+            this.bitacoraToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.bitacoraToolStripMenuItem.Text = "Bitacora";
+            // 
+            // visualizarToolStripMenuItem
+            // 
+            this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
+            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.visualizarToolStripMenuItem.Text = "Visualizar";
+            this.visualizarToolStripMenuItem.Click += new System.EventHandler(this.visualizarToolStripMenuItem_Click);
             // 
             // FormMenu
             // 
