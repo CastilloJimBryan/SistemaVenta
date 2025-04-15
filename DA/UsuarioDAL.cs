@@ -302,5 +302,35 @@ namespace DA
 
 
         #endregion
+
+        #region RelacionRol
+
+        public void AgregarRelacionUserRol(Usuario u)
+        {
+            using (SqlConnection con = connection)
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = $@"DELETE Usuario_Rol WHERE Usuario_Rol.UsuarioId=@UsuarioId";
+                    cmd.Parameters.AddWithValue("@UsuarioId",u.Id);
+                    foreach (var item in u.ComponenteList)
+                    {
+                        using (SqlCommand cmds=new SqlCommand())
+                        {
+                            cmds.Connection = con;
+                            cmds.CommandType = CommandType.Text;
+                            cmds.CommandText = "INSERT INTO Usuario_Rol (UsuarioId,RolId) VALUES (@UsuarioId,@RolId)";
+                            cmds.Parameters.AddWithValue("@UsuarioId",u.Id);
+                            cmds.Parameters.AddWithValue("@RolId",item.Id);
+                            cmds.ExecuteNonQuery();
+                        }
+                    }
+                }
+            }
+        }
+        #endregion
     }
 }

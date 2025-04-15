@@ -32,10 +32,10 @@
             this.cbxRol = new System.Windows.Forms.ComboBox();
             this.cbxAccion = new System.Windows.Forms.ComboBox();
             this.gpxUsuario = new System.Windows.Forms.GroupBox();
-            this.gpxRol = new System.Windows.Forms.GroupBox();
-            this.gpxAccion = new System.Windows.Forms.GroupBox();
             this.btnSeleccionar = new System.Windows.Forms.Button();
+            this.gpxRol = new System.Windows.Forms.GroupBox();
             this.btnAgregarRol = new System.Windows.Forms.Button();
+            this.gpxAccion = new System.Windows.Forms.GroupBox();
             this.btnAgregarAccion = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -80,6 +80,16 @@
             this.gpxUsuario.TabStop = false;
             this.gpxUsuario.Text = "Usuario";
             // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.Location = new System.Drawing.Point(23, 78);
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.Size = new System.Drawing.Size(168, 31);
+            this.btnSeleccionar.TabIndex = 6;
+            this.btnSeleccionar.Text = "Seleccionar";
+            this.btnSeleccionar.UseVisualStyleBackColor = true;
+            this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
+            // 
             // gpxRol
             // 
             this.gpxRol.Controls.Add(this.btnAgregarRol);
@@ -91,6 +101,16 @@
             this.gpxRol.TabStop = false;
             this.gpxRol.Text = "Rol";
             // 
+            // btnAgregarRol
+            // 
+            this.btnAgregarRol.Location = new System.Drawing.Point(23, 78);
+            this.btnAgregarRol.Name = "btnAgregarRol";
+            this.btnAgregarRol.Size = new System.Drawing.Size(168, 31);
+            this.btnAgregarRol.TabIndex = 6;
+            this.btnAgregarRol.Text = "Agregar";
+            this.btnAgregarRol.UseVisualStyleBackColor = true;
+            this.btnAgregarRol.Click += new System.EventHandler(this.btnAgregarRol_Click);
+            // 
             // gpxAccion
             // 
             this.gpxAccion.Controls.Add(this.btnAgregarAccion);
@@ -101,26 +121,6 @@
             this.gpxAccion.TabIndex = 5;
             this.gpxAccion.TabStop = false;
             this.gpxAccion.Text = "Accion";
-            // 
-            // btnSeleccionar
-            // 
-            this.btnSeleccionar.Location = new System.Drawing.Point(23, 78);
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.Size = new System.Drawing.Size(168, 31);
-            this.btnSeleccionar.TabIndex = 6;
-            this.btnSeleccionar.Text = "Seleccionar";
-            this.btnSeleccionar.UseVisualStyleBackColor = true;
-            this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
-            // 
-            // btnAgregarRol
-            // 
-            this.btnAgregarRol.Location = new System.Drawing.Point(23, 78);
-            this.btnAgregarRol.Name = "btnAgregarRol";
-            this.btnAgregarRol.Size = new System.Drawing.Size(168, 31);
-            this.btnAgregarRol.TabIndex = 6;
-            this.btnAgregarRol.Text = "Agregar";
-            this.btnAgregarRol.UseVisualStyleBackColor = true;
-            this.btnAgregarRol.Click += new System.EventHandler(this.btnAgregarRol_Click);
             // 
             // btnAgregarAccion
             // 
@@ -149,6 +149,7 @@
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // treeView1
             // 

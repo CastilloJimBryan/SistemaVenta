@@ -44,5 +44,9 @@ namespace BL
         {
             return componenteDAL.ListarAccion();
         }
+        public void ObtenerRolesUsuario(Usuario u)
+        {
+            componenteDAL.ObtenerRolesUsuario(u);
+        }
     }
 }

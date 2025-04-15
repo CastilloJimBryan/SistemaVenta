@@ -64,5 +64,10 @@ namespace BL
             usuarioDAL.EliminarDelHistorial(hu);
         }
         #endregion
+
+        public void InsertarRelacionUserRol(Usuario u)
+        {
+            usuarioDAL.AgregarRelacionUserRol(u);
+        }
     }
 }

@@ -88,7 +88,7 @@ namespace Sistema_Venta
                 DNI = seleccion.DNI,
                 Telefono = seleccion.Telefono,
             };
-            ///
+            componenteBL.ObtenerRolesUsuario(temporal);
             MostrarUsuario(temporal);
         }
 
@@ -113,7 +113,7 @@ namespace Sistema_Venta
                     }
                     else
                     {
-                        ////
+                        //faltaria agregar los q tienen rol asociado
                         temporal.ComponenteList.Add(Srol);
                         MostrarUsuario(temporal);
                     }
@@ -123,6 +123,11 @@ namespace Sistema_Venta
             {
                 MessageBox.Show("Debe Elegir unusuario");
             }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            usuarioBL.InsertarRelacionUserRol(temporal);
         }
     }
 }
