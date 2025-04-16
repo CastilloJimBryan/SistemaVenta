@@ -14,7 +14,7 @@ namespace BE
         public abstract List<Componente> Componentes { get; }
         public abstract void AgregarComponente(Componente c);
         public abstract void QuitarComponente(Componente c);
-
+        public abstract void VaciarAccion();
 
     }
 }

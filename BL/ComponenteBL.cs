@@ -48,5 +48,9 @@ namespace BL
         {
             componenteDAL.ObtenerRolesUsuario(u);
         }
+        public void fillRol(Rol r)
+        {
+            componenteDAL.FillRol(r);
+        }
     }
 }

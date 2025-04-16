@@ -86,7 +86,7 @@ namespace DA
         }
         public List<Componente>ListarTodo(string text)
         {
-            string where = "Is null";
+            string where = "Is NULL";
             if (string.IsNullOrEmpty(text))
             {
                 where = text;
@@ -105,6 +105,7 @@ namespace DA
                         $" INNER JOIN recursivo ON Rol_Rol.PadreId=recursivo.HijoId ) " +
                         $" SELECT recursivo.PadreId,recursivo.HijoId,Rol.Id,Rol.Nombre,Rol.EsRol FROM recursivo " +
                         $" INNER JOIN Rol ON recursivo.HijoId=Rol.Id ";
+
                     List<Componente> lis= new List<Componente>();
                     using (SqlDataReader dr=cmd.ExecuteReader())
                     {
@@ -167,7 +168,15 @@ namespace DA
                     }
                 }
             }
-            return c;////
+            return c;
+        }
+        public void FillRol(Rol r)
+        {
+            r.VaciarAccion();
+            foreach (var item in ListarTodo("=" + r.Id))
+            {
+                r.AgregarComponente(item);
+            }
         }
         public void ObtenerRolesUsuario(Usuario u)
         {
@@ -180,9 +189,9 @@ namespace DA
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = "SELECT Rol.Id,Rol.Nombre,Rol.EsRol " +
                         " FROM Usuario_Rol " +
-                        " INNER JOIN Rol ON Usuario_Rol.Id=Rol.Id " +
+                        " INNER JOIN Rol ON Usuario_Rol.RolId=Rol.Id " +
                         " WHERE Usuario_Rol.UsuarioId=@UsuarioId ";
-                    cmd.Parameters.AddWithValue("UsuarioId",u.Id);
+                    cmd.Parameters.AddWithValue("@UsuarioId",u.Id);
                     using (SqlDataReader dr=cmd.ExecuteReader())
                     {
                         u.ComponenteList.Clear();

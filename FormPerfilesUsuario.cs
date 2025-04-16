@@ -113,7 +113,7 @@ namespace Sistema_Venta
                     }
                     else
                     {
-                        //faltaria agregar los q tienen rol asociado
+                        componenteBL.fillRol(Srol);
                         temporal.ComponenteList.Add(Srol);
                         MostrarUsuario(temporal);
                     }
@@ -128,6 +128,36 @@ namespace Sistema_Venta
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             usuarioBL.InsertarRelacionUserRol(temporal);
+            MessageBox.Show("Guardado!!!");
+            treeView1.Nodes.Clear();
+        }
+
+        private void btnAgregarAccion_Click(object sender, EventArgs e)
+        {
+            if(temporal!=null)
+            {
+                var Saccion=(Accion)this.cbxAccion.SelectedItem;
+                if(Saccion != null)
+                {
+                    var existe = false;
+                    foreach (var item in temporal.ComponenteList)
+                    {
+                        if(componenteBL.ExisteRol(item,Saccion.Id))
+                        {
+                            existe = true;
+                        }
+                    }
+                    if(existe)
+                    {
+                        MessageBox.Show("Accion ya Asignada");
+                    }
+                    else
+                    {
+                        temporal.ComponenteList.Add(Saccion);
+                        MostrarUsuario(temporal);
+                    }
+                }
+            }
         }
     }
 }

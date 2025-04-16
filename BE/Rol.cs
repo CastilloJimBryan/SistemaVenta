@@ -28,5 +28,10 @@ namespace BE
         {
             _componentes.Remove(c);
         }
+
+        public override void VaciarAccion()
+        {
+           _componentes=new List<Componente>();
+        }
     }
 }

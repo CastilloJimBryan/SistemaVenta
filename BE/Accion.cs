@@ -27,5 +27,10 @@ namespace BE
         public override void QuitarComponente(Componente c)
         {
         }
+
+        public override void VaciarAccion()
+        {
+          
+        }
     }
 }

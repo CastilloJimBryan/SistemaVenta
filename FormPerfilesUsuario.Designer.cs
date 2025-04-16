@@ -130,6 +130,7 @@
             this.btnAgregarAccion.TabIndex = 6;
             this.btnAgregarAccion.Text = "Agregar";
             this.btnAgregarAccion.UseVisualStyleBackColor = true;
+            this.btnAgregarAccion.Click += new System.EventHandler(this.btnAgregarAccion_Click);
             // 
             // btnCerrar
             // 
